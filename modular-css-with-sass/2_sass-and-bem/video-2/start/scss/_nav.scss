@@ -6,22 +6,21 @@
   margin-top: em(20px);
   margin-bottom: em(30px);
 
-  &__item {
-    display: inline-block;
-    margin: 0 em(12px);
+  @include e(item) {
+    @extend %nav-item-disp;
     a {
-      font-size: em(18px);
-      font-weight: $font-weight--light;
+      @extend %nav-item-link;
       color: palette(grey);
-      display: block;
-      padding: em(8px, 18px);
-      border-bottom: 1px solid transparent;
+      &:hover {
+        @extend %nav-item-on;
+      }
     }
-
-    &--current a {
-      color: palette(black);
-      border-color: $color-primary;
+    @include m(current) {
+      @extend %nav-item-disp;
+      a {
+        @extend %nav-item-link;
+        @extend %nav-item-on;
+      }
     }
-
   }
 }
