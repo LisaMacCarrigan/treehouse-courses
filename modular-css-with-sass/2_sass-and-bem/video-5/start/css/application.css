@@ -224,7 +224,7 @@ th {
   color: #0b0b0b;
   border-color: #52bab3; }
 
-h1, .headline-primary {
+h1, .headline-primary--grouped, .headline-primary {
   font-weight: 300;
   font-size: 2.625em;
   line-height: 1.09524;
@@ -232,7 +232,7 @@ h1, .headline-primary {
   color: #525559;
   margin-top: 0; }
 
-h2, .headline-secondary {
+h2, .headline-secondary--grouped, .headline-secondary {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 1.5em;
@@ -269,6 +269,20 @@ a {
   color: #656a6e;
   text-decoration: none;
   font-weight: 400; }
+
+p {
+  font-size: 1.125em;
+  line-height: 1.5;
+  margin: 0 0 1.66667em;
+  font-weight: 300; }
+
+blockquote {
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 300;
+  margin: 1.33333em 0;
+  padding: 0 0 0 5%;
+  border-left: solid 0.33333em #ebecec; }
 
 ul,
 li {
@@ -340,7 +354,12 @@ button {
 
 .headline-primary {
   margin-bottom: 1.66667em; }
+  .headline-primary--grouped {
+    margin-bottom: 0; }
 .headline-secondary {
   margin-bottom: 0.91667em; }
+  .headline-secondary--grouped {
+    margin-top: 0.41667em;
+    margin-bottom: 2.25em; }
 
 /*# sourceMappingURL=application.css.map */
