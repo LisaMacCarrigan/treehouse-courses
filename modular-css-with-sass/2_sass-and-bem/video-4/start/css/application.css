@@ -224,6 +224,21 @@ th {
   color: #0b0b0b;
   border-color: #52bab3; }
 
+h1, .headline-primary {
+  font-weight: 300;
+  font-size: 2.625em;
+  line-height: 1.09524;
+  margin-bottom: 1.66667em;
+  color: #525559;
+  margin-top: 0; }
+
+h2, .headline-secondary {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+  color: #999da1;
+  letter-spacing: 1px; }
+
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -237,19 +252,6 @@ body {
 header {
   text-align: center;
   padding: 3em 0; }
-
-h1 {
-  font-weight: 300;
-  font-size: 2.625em;
-  line-height: 1.09524;
-  margin-bottom: 1.66667em;
-  color: #525559; }
-
-h2 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  font-size: 1.5em;
-  color: #999da1; }
 
 h3 {
   font-size: 1.125em; }
@@ -335,5 +337,10 @@ button {
   margin-bottom: 1.875em; }
   .nav__item a {
     color: #797e83; }
+
+.headline-primary {
+  margin-bottom: 1.66667em; }
+.headline-secondary {
+  margin-bottom: 0.91667em; }
 
 /*# sourceMappingURL=application.css.map */
