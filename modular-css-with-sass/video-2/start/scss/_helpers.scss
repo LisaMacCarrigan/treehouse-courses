@@ -2,7 +2,7 @@
 // Helpers
 // ==========================================================================
 
-// Clearfix
+// Clearfix (for clearing floats)
 
 %clearfix {
   &:after {
@@ -29,6 +29,6 @@
 
 %pseudos {
   display: block;
-  content: ''; 
+  content: '';
   position: absolute;
 }
