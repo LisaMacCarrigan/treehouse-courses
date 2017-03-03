@@ -45,10 +45,16 @@
   $el,
   $el-w: null,
   $el-h: null) {
+
+  @if $el == 'before' or $el == 'after' {
     &:#{$el} {
       @extend %pseudos;
       width: $el-w;
       height: $el-h;
       @content;
     }
+  }
+  @else {
+    @error '`#{$el}` is not a valid pseudo-element.';
+  }
 }

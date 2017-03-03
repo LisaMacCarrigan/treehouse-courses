@@ -9,6 +9,11 @@
   position: absolute;
   width: 1px; }
 
+.icn-toggle:before {
+  display: block;
+  content: '';
+  position: absolute; }
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -243,5 +248,17 @@ h2 {
 .progbar--info,
 .tooltip--info {
   background-color: #9279c3; }
+
+.icn-toggle {
+  width: 25px;
+  height: 17px;
+  position: absolute;
+  border-top: solid 3px #797e83;
+  border-bottom: solid 3px #797e83; }
+  .icn-toggle:before {
+    width: 25px;
+    height: 3px;
+    background: #999da1;
+    top: 4px; }
 
 /*# sourceMappingURL=application.css.map */
