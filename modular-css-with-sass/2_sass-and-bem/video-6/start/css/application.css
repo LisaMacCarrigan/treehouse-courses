@@ -1,5 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
-.srt {
+.srt, .form__label--hidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -194,7 +194,7 @@ td,
 th {
   padding: 0; }
 
-[class^="btn--"] {
+[class^="btn--"], .form__btn {
   padding: 15px 30px;
   border: 0;
   border-radius: 0.4em;
@@ -204,9 +204,9 @@ th {
   font-weight: 400;
   transition: opacity 0.3s;
   display: block; }
-  [class^="btn--"]:hover {
+  [class^="btn--"]:hover, .form__btn:hover {
     opacity: .75; }
-  [class^="btn--"]:active {
+  [class^="btn--"]:active, .form__btn:active {
     opacity: initial; }
 
 .nav__item, .nav__item--current {
@@ -360,5 +360,23 @@ button {
   .headline-secondary--grouped {
     margin-top: 0.41667em;
     margin-bottom: 2.25em; }
+
+.form__label {
+  display: block;
+  margin-bottom: 0.625em; }
+.form__input {
+  width: 100%;
+  font-size: 1.125em;
+  padding: 0.83333em;
+  margin-bottom: 1.11111em;
+  border-bottom: 6px solid #d6d7d9;
+  border-radius: 0.4em;
+  background: #ebecec;
+  color: black;
+  font-weight: 300; }
+  .form__input:focus {
+    border-color: #52bab3; }
+.form__btn {
+  background: #52bab3; }
 
 /*# sourceMappingURL=application.css.map */
