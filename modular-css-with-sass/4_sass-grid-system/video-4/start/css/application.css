@@ -1,4 +1,9 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+.grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 .srt, .form__label--hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -17,7 +22,7 @@
   content: '';
   position: absolute; }
 
-.centered {
+.centered, .grid {
   float: none;
   margin-left: auto;
   margin-right: auto; }
@@ -285,6 +290,14 @@ footer {
 .panel--padded, .panel--padded--centered {
   padding-top: 5em;
   padding-bottom: 2.125em; }
+
+.grid {
+  width: 90%; }
+  [class*="grid__col--"] > .grid {
+    width: 100%; }
+  @media (min-width: 1100px) {
+    .grid {
+      max-width: 1050px; } }
 
 @media (min-width: 769px) {
   .grid__col--1 {
