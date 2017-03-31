@@ -64,9 +64,7 @@ function Application(props) {
       <Header title={props.title}/>
 
       <div className="players">
-        {props.players.map(function(player) {
-          return <Player name={player.name} score={player.score} />
-        })}
+        {props.players.map(player => <Player name={player.name} score={player.score} /> )}
       </div>
     </div>
   );
