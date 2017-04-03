@@ -86,6 +86,9 @@ var Application = React.createClass({
 
   onScoreChange: function(index, delta) {
     console.log('onScoreChange', index, delta);
+    this.state.players[index].score += delta;
+    this.setState(this.state);
+    // if we dont do this, then we won't have indicated to React that this.state has changed and that it should re-render
   },
 
   render: function() {
